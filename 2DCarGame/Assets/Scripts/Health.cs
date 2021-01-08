@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
 
-    [SerializeField] float health = 500f;
+    [SerializeField] float health = 50f;
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {

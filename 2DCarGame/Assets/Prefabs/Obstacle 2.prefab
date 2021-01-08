@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5302632799495443616}
   - component: {fileID: 5302632799495443617}
   - component: {fileID: 5302632799495443618}
+  - component: {fileID: -6418968710914268164}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Untagged
@@ -150,4 +151,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07545630c8de154781cf23a63a01ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 75
+  damage: 3
+--- !u!114 &-6418968710914268164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302632799495443619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c4fe1c1d8bee74db2549f1ac62bcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 2
+  enemyLaserPrefab: {fileID: 2708604563401822654, guid: 3fa298cb682e5444ab886a0e30f474b8, type: 3}
+  enemyLaserSpeed: 10

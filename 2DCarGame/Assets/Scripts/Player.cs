@@ -34,13 +34,8 @@ public class Player : MonoBehaviour
     private void Move()
     {
         var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        var newXPos = transform.position.x + deltaX;
-        newXPos = Mathf.Clamp(newXPos, xMin, xMax);
+        var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
 
-        var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        var newYPos = transform.position.y + deltaY;
-        newYPos = Mathf.Clamp(newYPos, yMin, yMax);
-
-        this.transform.position = new Vector2(newXPos, newYPos);
+        this.transform.position = new Vector2(newXPos, transform.position.y);
     }
 }
