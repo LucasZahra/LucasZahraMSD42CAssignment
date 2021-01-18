@@ -6,6 +6,10 @@ public class Health : MonoBehaviour
 {
 
     [SerializeField] float health = 50f;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration = 1f;
+    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
@@ -15,7 +19,17 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+
+        AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
+
+        Destroy(explosion, explosionDuration);
     }
 }

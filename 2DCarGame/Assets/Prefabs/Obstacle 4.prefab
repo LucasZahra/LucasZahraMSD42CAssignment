@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5040618528021759916}
   - component: {fileID: 5040618528021759919}
   - component: {fileID: -488837083134916527}
+  - component: {fileID: -7514503952442412347}
   m_Layer: 0
   m_Name: Obstacle 4
   m_TagString: Untagged
@@ -169,3 +170,20 @@ MonoBehaviour:
   maxTimeBetweenShots: 2
   enemyLaserPrefab: {fileID: 2708604563401822654, guid: 3fa298cb682e5444ab886a0e30f474b8, type: 3}
   enemyLaserSpeed: 10
+--- !u!114 &-7514503952442412347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5040618528021759918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c744a69b7f87f94b8dbd5ad6d524834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  deathVFX: {fileID: 5901100778890762804, guid: 6336c3bfa0da4f7469a09bf90b95d622, type: 3}
+  explosionDuration: 1
+  enemyDeathSound: {fileID: 8300000, guid: 267a5b09c7ce0114d95d4dcd84e31ad4, type: 3}
+  enemyDeathSoundVolume: 0.034
