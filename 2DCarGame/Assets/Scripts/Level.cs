@@ -29,6 +29,11 @@ public class Level : MonoBehaviour
         StartCoroutine(WaitAndLoad());
     }
 
+    public void LoadWinner()
+    {
+        SceneManager.LoadScene("Winner");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

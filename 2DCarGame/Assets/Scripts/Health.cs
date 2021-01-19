@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
 
-    [SerializeField] float health = 50f;
+    [SerializeField] int health = 1;
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 1f;
     [SerializeField] AudioClip enemyDeathSound;

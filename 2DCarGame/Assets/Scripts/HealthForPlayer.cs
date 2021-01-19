@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthForPlayer : MonoBehaviour
 {
 
-    [SerializeField] float health = 30f;
+    [SerializeField] int health = 100;
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 1f;
     [SerializeField] AudioClip enemyDeathSound;
@@ -22,6 +22,11 @@ public class HealthForPlayer : MonoBehaviour
             Die();
             FindObjectOfType<Level>().LoadGameOver();
         }
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 
     private void Die()
