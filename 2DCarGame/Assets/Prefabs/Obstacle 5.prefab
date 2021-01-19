@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4556985458128006618}
   - component: {fileID: 4556985458128006617}
   - component: {fileID: -5898671611374788993}
+  - component: {fileID: 6769638377014121864}
   m_Layer: 0
   m_Name: Obstacle 5
   m_TagString: Untagged
@@ -169,3 +170,56 @@ MonoBehaviour:
   explosionDuration: 1
   enemyDeathSound: {fileID: 8300000, guid: 267a5b09c7ce0114d95d4dcd84e31ad4, type: 3}
   enemyDeathSoundVolume: 0.034
+--- !u!60 &6769638377014121864
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4556985458128006616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.94, y: -0.29999998}
+      - {x: 1.06, y: -0.16}
+      - {x: 0.91999996, y: -0.14}
+      - {x: 1.0699999, y: 0.5}
+      - {x: 1.0699999, y: 0.76}
+      - {x: 0.98999995, y: 0.89}
+      - {x: 0.90999997, y: 0.87}
+      - {x: 0.91999996, y: 1.9499999}
+      - {x: 0.85999995, y: 2.1}
+      - {x: 0.72999996, y: 2.2}
+      - {x: 0.68, y: 2.22}
+      - {x: 0.61, y: 2.24}
+      - {x: -0.65, y: 2.24}
+      - {x: -0.77, y: 2.19}
+      - {x: -0.90999997, y: 2.08}
+      - {x: -0.95, y: 0.9}
+      - {x: -1.0699999, y: 0.76}
+      - {x: -1.0699999, y: 0.7}
+      - {x: -1.06, y: 0.68}
+      - {x: -0.91999996, y: 0.65999997}
+      - {x: -0.97999996, y: -0.19999999}
+      - {x: -0.90999997, y: -0.25}
+      - {x: -0.90999997, y: -1.4699999}
+      - {x: -0.95, y: -1.9}
+      - {x: -0.75, y: -2.25}
+      - {x: 0.62, y: -2.25}
+      - {x: 0.76, y: -2.23}
+      - {x: 0.95, y: -1.9}
