@@ -720,6 +720,14 @@ PrefabInstance:
       propertyPath: scoreValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3645653260554564024, guid: 0d2ea0a9033db9045a7dc3438747e1f5, type: 3}
+      propertyPath: playerHRVolume
+      value: 0.232
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645653260554564024, guid: 0d2ea0a9033db9045a7dc3438747e1f5, type: 3}
+      propertyPath: playerHRSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5294fb71b4aed7f41ae688531099c1a7, type: 3}
     - target: {fileID: 3645653260554564026, guid: 0d2ea0a9033db9045a7dc3438747e1f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.36583814

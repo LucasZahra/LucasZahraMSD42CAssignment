@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07545630c8de154781cf23a63a01ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 2
 --- !u!114 &-6418968710914268164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +188,8 @@ MonoBehaviour:
   explosionDuration: 1
   enemyDeathSound: {fileID: 8300000, guid: 267a5b09c7ce0114d95d4dcd84e31ad4, type: 3}
   enemyDeathSoundVolume: 0.034
+  playerHRSound: {fileID: 8300000, guid: 5294fb71b4aed7f41ae688531099c1a7, type: 3}
+  playerHRVolume: 0.032
   scoreValue: 5
 --- !u!60 &5593618745125642352
 PolygonCollider2D:

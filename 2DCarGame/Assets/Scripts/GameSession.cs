@@ -33,6 +33,11 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
+
+        if(score >= 100)
+        {
+            Level.LoadWinner();
+        }
     }
 
     public void ResetGame()

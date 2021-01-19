@@ -8,8 +8,12 @@ public class Health : MonoBehaviour
     [SerializeField] int health = 1;
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 1f;
+
     [SerializeField] AudioClip enemyDeathSound;
     [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
+
+    [SerializeField] AudioClip playerHRSound;
+    [SerializeField] [Range(0, 1)] float playerHRVolume = 0.5f;
 
     [SerializeField] int scoreValue = 50;
 
@@ -31,6 +35,7 @@ public class Health : MonoBehaviour
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
 
         AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
+        AudioSource.PlayClipAtPoint(playerHRSound, Camera.main.transform.position, playerHRVolume);
 
         Destroy(explosion, explosionDuration);
 

@@ -29,7 +29,7 @@ public class Level : MonoBehaviour
         StartCoroutine(WaitAndLoad());
     }
 
-    public void LoadWinner()
+    public static void LoadWinner()
     {
         SceneManager.LoadScene("Winner");
     }

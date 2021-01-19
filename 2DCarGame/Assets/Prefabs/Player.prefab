@@ -124,11 +124,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016844892f5646746ab6ea18d2d2c431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   deathVFX: {fileID: 5901100778890762804, guid: 6336c3bfa0da4f7469a09bf90b95d622, type: 3}
   explosionDuration: 1
   enemyDeathSound: {fileID: 8300000, guid: 267a5b09c7ce0114d95d4dcd84e31ad4, type: 3}
   enemyDeathSoundVolume: 0.034
+  playerHRSound: {fileID: 8300000, guid: 5294fb71b4aed7f41ae688531099c1a7, type: 3}
+  playerHRVolume: 0.017
 --- !u!60 &8467273021581753886
 PolygonCollider2D:
   m_ObjectHideFlags: 0
