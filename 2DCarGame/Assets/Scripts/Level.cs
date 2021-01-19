@@ -11,6 +11,7 @@ public class Level : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("GameOver");
+
     }
     public void LoadStartMenu()
     {
@@ -20,6 +21,7 @@ public class Level : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("CarGame");
+        FindObjectOfType<GameSession>().ResetGame();
     }
 
     public void LoadGameOver()
