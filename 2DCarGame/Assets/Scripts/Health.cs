@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     [SerializeField] AudioClip enemyDeathSound;
     [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
 
+    [SerializeField] int scoreValue = 50;
+
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
         DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
@@ -31,5 +33,7 @@ public class Health : MonoBehaviour
         AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
 
         Destroy(explosion, explosionDuration);
+
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
     }
 }
