@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -6418968710914268164}
   - component: {fileID: 4564321824834059300}
   - component: {fileID: 5593618745125642352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c744a69b7f87f94b8dbd5ad6d524834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 8
   deathVFX: {fileID: 5901100778890762804, guid: 6336c3bfa0da4f7469a09bf90b95d622, type: 3}
   explosionDuration: 1
   enemyDeathSound: {fileID: 8300000, guid: 267a5b09c7ce0114d95d4dcd84e31ad4, type: 3}
